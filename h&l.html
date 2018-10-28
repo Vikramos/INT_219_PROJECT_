@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,intial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-size:20px;
+  text-align: center;
+}
+a {
+  text-decoration:none;
+  color:black;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: red;
+  color: white;
+}
+/*tab styling*/
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 400px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 400px;
+    font-family: Comic Sans MS, cursive, sans-serif;
+}
+.tabcontent li a:hover {
+  text-decoration: underline;
+}
+.tabcontent ul{
+  list-style: none;
+}
+.tabcontent h3{
+  color:red;
+  
+}
+.tablinks{
+  color:red;
+  font-family: Verdana;
+}
+.featured{
+  padding-left:150px;
+}
+.featured img{
+  padding:20px;
+  font-family: Comic Sansa MS;
+}
+.featured img:hover{
+  
+
+}
+h2{
+  color:navy;
+}
+</style>
+</head>
+<body>
+<div class="header">
+<a href="" style="float:left;text-shadow: 2px 2px 2px red;font-family: Courier New;" ><b>shopaholic.com</b></a><span style="font-family: 'Comic Sans MS'; float: right;">THE WORLD'S LARGEST SHOPPING WEBSITE.</span></div>
+
+<div id="navbar">
+  <a  href="start1.html">Home</a>
+  <a  href="men.html">Men</a>
+  <a  href="women.html">Women</a>
+  <a  href="kids.html">Kids</a>
+  <a class="active" href="h&l.html">Home&Living</a>
+</div>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Topwear')" id="defaultOpen">Topwear</button>
+  <button class="tablinks" onclick="openCity(event, 'Bottomwear')">Bottomwear</button>
+  <button class="tablinks" onclick="openCity(event, 'Sports & Active Wear')">Sports & Active Wear</button>
+  <button class="tablinks" onclick="openCity(event, 'Indian & Festive Wear')">Indian & Festive Wear</button>
+  <button class="tablinks" onclick="openCity(event, 'Plus Size')">Plus Size</button>
+</div>
+<div id="Topwear" class="tabcontent">
+  <ul><h3>Topwear</h3>
+  <li><a href="">T-Shirts</a></li>
+  <li><a href="">Formal Shirts</a></li>
+  <li><a href="">Sweaters & Sweatshirts</a></li>
+  <li><a href="">Jackets</a></li>
+  <li><a href="">Blazers & Coats</a></li>
+</ul>
+</div>
+
+<div id="Bottomwear" class="tabcontent">
+  <ul><h3>Bottomwear</h3>
+  <li><a href="">Jeans</a></li>
+  <li><a href="">Casual Trousers</a></li>
+  <li><a href="">Formal Trousers</a></li>
+</ul>
+</div>
+
+<div id="Sports & Active Wear" class="tabcontent">
+  <ul><h3>Sports & Active Wear</h3>
+  <li><a href="">Active T-Shirts</a></li>
+  <li><a href="">Swimwear</a></li>
+  <li><a href="">Trackpants & Shorts</a></li>
+</ul>
+</div>
+
+<div id="Indian & Festive Wear" class="tabcontent">
+  <ul><h3>Indian & Festive Wear</h3>
+  <li><a href="">Kurtas & Kurta Sets</a></li>
+  <li><a href="">Sherwanis</a></li>
+  <li><a href="">Dhoti</a></li>
+</ul>
+</div>
+
+<div id="Plus Size" class="tabcontent">
+  <h3><a href="">Plus Size</a></h3>
+</div>
+<br><br><br><br><br>
+<h2>#FEATURED</h2>
+<div class="featured">
+  <img src="D:\studies\Deepa\FEWD\Project\images\adidas.jpg" width=800px height=600px><a href=""></a>
+  <img src="D:\studies\Deepa\FEWD\Project\images\indowestern.jpg" width=800px height=600px><a href=""></a>
+  <img src="D:\studies\Deepa\FEWD\Project\images\nike.jpg" width=800px height=600px><a href=""></a>
+  <img src="D:\studies\Deepa\FEWD\Project\images\jockey.png" width=800px height=600px><a href=""></a>
+  
+</div>
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+</body>
+</html>

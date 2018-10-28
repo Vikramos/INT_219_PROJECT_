@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,intial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {
+  margin: 0;
+  font-size: 28px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-size:20px;
+  text-align: center;
+}
+a {
+  text-decoration:none;
+  color:black;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: red;
+  color: white;
+}
+/*feautured styling*/
+
+.featured{
+  padding-left:50px;
+}
+.featured img{
+  padding:20px;
+  font-family: Comic Sansa MS;
+  opacity: 1.0;
+    filter: alpha(opacity=100);
+}
+.featured img:hover{
+  opacity: 0.5;
+    filter: alpha(opacity=50);
+
+}
+#navbar .search-container {
+  float: right;
+}
+
+#navbar input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+#navbar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+#navbar .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar .search-container {
+    float: none;
+  }
+  #navbar a, #navbar input[type=text], #navbar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  #navbar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+h2{
+  font-family: comic sans ms;
+  color:navy;
+}
+/*side bar styling*/
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:   #484848;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+/*hoverable drop button*/
+.dropbtn {
+    background-color: #484848;
+    color: white;
+    padding:30px;
+    margin-top: 200px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    font-size: 12px;
+    padding: 5px 7px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {background-color: grey;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: black;}
+/*footer*/
+.footer{
+  background-color: #E8E8E8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left:500px;
+  padding-right:500px;
+  font-family: Comic Sans MS;
+  column-count: 4;
+  font-size: 15px;
+}
+.footer ul{
+  list-style: none;
+}
+</style>
+</head>
+<body>
+  <div class="sidenav">
+    <div class="dropdown">
+      <button class="dropbtn">Boys Clothing</button>
+        <div class="dropdown-content">
+          <a href="tshirts.html">T-Shirts</a>
+          <a href="jeans.html">jeans</a>
+          <a href="sweats.html">Sweaters & Sweatshirts</a>
+          <a href="sleepwear.html">Rompers & Sleepwear</a>
+          <a href="sherwanis.html">Indianwear</a>
+        </div>
+      </div>
+      <div class="dropdown">
+      <button class="dropbtn">Girls Clothing</button>
+        <div class="dropdown-content">
+          <a href="jj.html">Jeans</a>
+          <a href="party.html">Dresses</a>
+          <a href="reebok.html">Tights & Leggings</a>
+          <a href="sleep.html">Rompers & Sleepwear</a>
+          <a href="yufta.html">Indianwear</a>
+        </div>
+      </div>
+    </div>
+<div class="main">
+<div class="header">
+<a href="start1.html" style="float:left;text-shadow: 2px 2px 2px red;font-family: Courier New;" ><b>shopaholic.com</b></a><span style="font-family: 'Comic Sans MS'; float: right;">THE WORLD'S LARGEST SHOPPING WEBSITE.</span></div>
+
+<div id="navbar">
+  <a  href="start1.html">Home</a>
+  <a  href="men.html">Men</a>
+  <a  href="women.html">Women</a>
+  <a class="active" href="kids.html">Kids</a>
+  <div class="search-container">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+  </div>
+</div>
+<h2>#FEATURED</h2>
+<div class="featured">
+  <a href="yk.html"><img src="images\yk.jpg" width=700px height=600px></a>
+  <a href="biba.html"><img src="images\biba.jpg" width=700px height=600px</a>
+  <a href="peppermint.html"><img src="images\peppermint.jpg" width=700px height=600px></a>
+  <a href="ucb.html"><img src="images\ucb.jpg" width=700px height=600px></a>
+  
+</div>
+<div class="footer">
+  <ul><h4>ONLINE SHOPPING</h4>
+    <li><a href="men.html">Men</a></li>
+    <li><a href="women.html">Women</a></li>
+    <li><a href="kids.html">Kids</a></li>
+  </ul>
+  <br><br><br><br><br>
+  <ul><h4>USEFUL LINKS</h4>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="faq.html">FAQ</a></li>
+    <li><a href="t&c.html">T&C</a></li>
+    <li><a href="tou.html">Terms of Use</a></li>
+  </ul>
+  <br><br><br><br><br>
+  <h4>KEEP IN TOUCH</h4><br>
+ <a href=""> <i class="fa fa-facebook-official"></i></a>
+ <a href=""> <i class="fa fa-twitter"></i></a>
+  <a href=""><i class="fa fa-instagram"></i></a>
+  <a href=""><i class="fa fa-youtube"></i></a>
+  <br><br><br><br><br><br><br><br>
+  <b>100% ORIGINAL</b> guarantee for all products on shopaholic.com
+  <br><br><b>Return within 30 days</b> of receiving your order
+  <br><br><b>Get free delivery</b> for every order above Rs.1199   
+</div>
+</div>
+
+</body>
+</html>
